@@ -1,12 +1,14 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/bassline/version', __FILE__)
+require File.expand_path("../lib/bassline/version", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["eric thul"]
   gem.email         = ["thul.eric@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Bassline description}
+  gem.summary       = %q{Bassline summary}
   gem.homepage      = ""
+
+  gem.add_development_dependency("rspec")
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
