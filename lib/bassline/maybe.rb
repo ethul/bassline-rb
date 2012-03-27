@@ -2,6 +2,10 @@ module Bassline
   class Maybe
     extend Applicatives::Maybe::Class
     extend Monads::Maybe::Class
+
+    def get_or b
+      fold -> {b}, ->a {a}
+    end
   end
 
   class Nothing < Maybe
