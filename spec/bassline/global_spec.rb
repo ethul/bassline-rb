@@ -9,6 +9,6 @@ describe Bassline do
     specify{Either.should == Bassline::Either}
     specify{Left.should == Bassline::Left}
     specify{Right.should == Bassline::Right}
-    specify{ReaderT.should == Bassline::ReaderT}
+    specify{Kleisli.should == Bassline::Kleisli}
   end
 end

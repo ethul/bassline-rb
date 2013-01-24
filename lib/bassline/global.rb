@@ -11,5 +11,5 @@ module Bassline
   ::Either = Bassline::Either
   ::Left = Bassline::Left
   ::Right = Bassline::Right
-  ::ReaderT = Bassline::ReaderT
+  ::Kleisli = Bassline::Kleisli
 end
